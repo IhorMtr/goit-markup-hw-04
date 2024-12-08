@@ -74,6 +74,7 @@ header address a {
   display: flex;
   justify-content: space-between;
   padding: 0 15px;
+  align-items: center;
 }
 
 .header-nav {
@@ -91,6 +92,10 @@ header address a {
 
 .header-page-logo-studio {
   color: #4D5AE5;
+}
+
+.nav-link {
+  display: block;
 }
 
 .nav-ul {
