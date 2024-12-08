@@ -111,12 +111,12 @@ header address a {
   padding: 24px 0;
 }
 
-.nav-list-link-active {
+.header .nav-list-link-active {
   position: relative;
   color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-list-link-active::after {
+.header .nav-list-link-active::after {
   content: "";
   display: block;
   position: absolute;
@@ -139,11 +139,12 @@ header address a {
 .nav-list-link:hover, .header-address-a:hover {
   color: #404BBF;
 }
-.nav-list-link .header-address-a, .header-address-a .header-address-a {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .nav-list-link:focus, .header-address-a:focus {
   color: #404BBF;
+}
+
+.header-address-a {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container {
