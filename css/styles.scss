@@ -153,6 +153,7 @@ header {
           linear-gradient(rgba($grey, 0.7), rgba($grey, 0.7)),
           url("/images/main_picture.jpg");
   max-width: 1440px;
+  margin: 0 auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -238,7 +239,7 @@ header {
   background-color: $cloud;
   border: 1px solid $light-slate;
   border-radius: 4px;
-  margin: 8px;
+  margin-bottom: 8px;
   height: 112px;
 }
 .our-principles-section-subtitle{
