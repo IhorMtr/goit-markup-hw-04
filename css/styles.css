@@ -50,8 +50,16 @@ p {
   letter-spacing: 0.02em;
 }
 
-footer {
-  background-color: #2E2F42;
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding: 120px 0;
 }
 
 header a {
@@ -147,16 +155,27 @@ header address a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+.header-page-logo, .footer-page-logo {
+  color: #4D5AE5;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 117%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
 }
 
-.section {
-  padding: 120px 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .preview-section {
@@ -209,29 +228,6 @@ header address a {
   background-color: #404BBF;
 }
 
-.header-page-logo, .footer-page-logo {
-  color: #4D5AE5;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 117%;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .our-principles-section .container ul {
   display: flex;
   gap: 24px;
@@ -269,6 +265,7 @@ header address a {
 
 .our-team-list-item {
   background-color: #FFFFFF;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -276,6 +273,31 @@ header address a {
 }
 .our-team-list-item:first-child {
   border-radius: 0 0 4px 4px;
+}
+
+.our-team-list-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.our-team-list-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.our-team-list-social-item-link {
+  background-color: #4D5AE5;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our-team-list-social-item-link:hover, .our-team-list-social-item-link:focus {
+  background-color: #404BBF;
 }
 
 .our-team-section-wrapper {
@@ -289,6 +311,7 @@ header address a {
 
 .our-team-section-p {
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .our-team-section-title, .project-section-title {
@@ -318,6 +341,10 @@ header address a {
 
 .project-section-subtitle {
   margin-bottom: 8px;
+}
+
+footer {
+  background-color: #2E2F42;
 }
 
 .footer-page-logo-studio {
