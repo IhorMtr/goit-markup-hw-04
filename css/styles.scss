@@ -389,11 +389,12 @@ header {
 }
 
 .project-section-list-item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover {
     box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08),
     0 1px 1px rgba(46, 47, 66, 0.16),
     0 2px 1px rgba(46, 47, 66, 0.08);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &:hover .project-section-image-description {
@@ -483,7 +484,6 @@ footer {
 .footer-list-socials-item {
   width: 40px;
   height: 40px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-list-socials-item-link {
@@ -494,6 +494,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover, &:focus {
     background-color: $green;
@@ -501,7 +502,5 @@ footer {
 }
 
 .footer-list-socials-item-link-svg {
-  width: 24px;
-  height: 24px;
   fill: $cloud;
 }
